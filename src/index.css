@@ -21,6 +21,15 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.card-category {
+  color: rgb(14, 153, 181);
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem;
+}
+.card-title {
+  margin: 0;
+}
+
 input {
   border: 0;
   border-bottom: 4px solid #2a2a2a;

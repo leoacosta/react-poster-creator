@@ -8,4 +8,4 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
-ReactDOM.render(<CardPicker />, document.getElementById('root'));
+//ReactDOM.render(<CardPicker />, document.getElementById('root'));
