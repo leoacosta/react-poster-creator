@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 class CardPicker extends Component {
     goToCardDashboard(event) {
         event.preventDefault();
-        console.log("Go to the card dashboard...");
-        console.log(this.cardInput.value);
+        const cardId = this.cardInput.value.toLowerCase();
+        console.log(`/card/${cardId}/`);
+        // investigate how route can go to `/card/${cardId}`
+        //this.context.router.transitionTo(`/card/${cardId}`);
     }
 
     render() {
@@ -13,7 +15,7 @@ class CardPicker extends Component {
                 <h2 className="card-picker__title">Please enter your card title</h2>
                 <label className="card-picker__label" htmlFor="card-title">Create and customize your very own card component.</label>
                 <input type="text" id="card-title" placeholder="Card Title" ref={(input) => { this.cardInput = input; }} required />
-                <button type="submit">View Card</button>
+                <button type="submit">Continue &rarr;</button>
             </form>
         )
     }

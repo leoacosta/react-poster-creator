@@ -11,13 +11,11 @@ import registerServiceWorker from './registerServiceWorker';
 const Root = () => {
     return (
         <Router>
-            <div>
-                <Switch>
-                    <Route exact path="/" component={CardPicker} />
-                    <Route path="/card/:cardId" component={App} />
-                    <Route component={NotFound} />
-                </Switch>
-            </div>
+            <Switch>
+                <Route exact path="/" component={CardPicker} />
+                <Route path="/card/:cardId" component={App} />
+                <Route component={NotFound} />
+            </Switch>
         </Router>
     )
 }
