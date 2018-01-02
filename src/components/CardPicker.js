@@ -4,9 +4,10 @@ class CardPicker extends Component {
     goToCardDashboard(event) {
         event.preventDefault();
         const cardId = this.cardInput.value.toLowerCase();
-        console.log(`/card/${cardId}/`);
-        // investigate how route can go to `/card/${cardId}`
-        //this.context.router.transitionTo(`/card/${cardId}`);
+        // Goes to the corresponding route from user input
+        this.props.history.push(`/card/${cardId}/`);
+
+        // TODO: Investigate how to add hyphens when spaces exist in URL
     }
 
     render() {
