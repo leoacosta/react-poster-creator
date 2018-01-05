@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class CardPicker extends Component {
+class PosterPicker extends Component {
     goToCardDashboard(event) {
         event.preventDefault();
         const cardId = this.cardInput.value.toLowerCase();
@@ -22,4 +22,4 @@ class CardPicker extends Component {
     }
 }
 
-export default CardPicker;
+export default PosterPicker;

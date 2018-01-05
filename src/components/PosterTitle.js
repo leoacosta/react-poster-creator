@@ -6,7 +6,7 @@ const PosterTitle = (props) => {
         <div>
             <header>
                 <h3 className="card-category">{props.cardCat}</h3>
-                <h2 className="card-title">{props.PosterTitle}</h2>
+                <h2 className="card-title">{props.posterTitle}</h2>
             </header>
             <CreateCardForm />
         </div>
