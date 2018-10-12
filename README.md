@@ -1,4 +1,4 @@
-# React Quiz
+# React Poster Creator
 
 [View demo](http://leoacosta.github.io/react-poster-creator/)
 
