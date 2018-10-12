@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import PosterTitle from './components/PosterTitle'
-import './App.css';
+import CreatePosterForm from './components/CreatePosterForm';
+import Poster from './components/Poster'
 
 class App extends Component {
+  
+  state = {
+    title: "",
+    subtitle: "",
+    image: ""
+  }
+
   render() {
     return (
-      <div className="App">
-        <PosterTitle cardCat="Tango" posterTitle="Buenos Aires" />
-      </div>
+      <React.Fragment>
+        <CreatePosterForm />
+        <Poster cardCat="Tango" posterTitle="Buenos Aires" />
+      </React.Fragment>
     );
   }
 }
