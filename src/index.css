@@ -1,8 +1,11 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: sans-serif;
   margin: 0;
   height: 100vh;
@@ -77,4 +80,9 @@ button {
   padding: 1rem 2rem;
   width: 100%;
   font-size: 1rem;
+}
+
+.print-icon {
+  height: auto;
+  max-width: 100px;
 }
