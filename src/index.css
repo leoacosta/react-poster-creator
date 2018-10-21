@@ -1,11 +1,8 @@
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   font-family: sans-serif;
   margin: 0;
   height: 100vh;
@@ -25,7 +22,11 @@ body {
 }
 
 .column:nth-child(2) {
-  padding: 5rem;
+  padding: 3rem;
+}
+
+.poster-container {
+  position: relative;
 }
 
 .poster-details {
@@ -83,6 +84,9 @@ button {
 }
 
 .print-icon {
+  bottom: 2rem;
   height: auto;
-  max-width: 100px;
+  max-width: 50px;
+  position: absolute;
+  right: 2rem;
 }
