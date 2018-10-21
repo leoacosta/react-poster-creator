@@ -22,3 +22,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+## To Do List
+
+Here a list of features that I would like to add to the project.
+
+-   Google Fonts integration
+-   Ability to search photos directly from the [Unsplash API](https://unsplash.com/developers)
