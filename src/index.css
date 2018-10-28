@@ -1,8 +1,11 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: sans-serif;
   margin: 0;
   height: 100vh;
@@ -26,6 +29,7 @@ html, body {
 }
 
 .poster-container {
+  border: 40px solid #e9e2c8;
   position: relative;
 }
 
@@ -45,14 +49,21 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
-.poster-subtitle {
-  color: rgb(14, 153, 181);
-  font-size: 0.85rem;
-  margin: 0 0 0.5rem;
+.poster-title {
+  color: #415d75;
+  font-size: 4rem;
+  margin: 0;
 }
 
-.poster-title {
-  margin: 0;
+.poster-subtitle {
+  color: rgb(14, 153, 181);
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0.25rem;
+}
+
+.poster-title,
+.poster-subtitle {
+  word-break: break-all;
 }
 
 .poster-byline {
@@ -89,4 +100,5 @@ button {
   max-width: 50px;
   position: absolute;
   right: 2rem;
+  opacity: 0.25;
 }
