@@ -9,32 +9,15 @@ class App extends Component {
     image: ''
   };
 
-  getPosterTitle = e => {
-    this.setState({
-      title: e.target.value
-    });
-  };
-
-  getPosterSubtitle = e => {
-    this.setState({
-      subtitle: e.target.value
-    });
-  };
-
-  getImageURL = e => {
-    this.setState({
-      image: e.target.value
-    });
+  // Change state based on values entered
+  handleValueChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
     return (
       <div className="container">
-        <CreatePosterForm
-          getPosterTitle={this.getPosterTitle}
-          getPosterSubtitle={this.getPosterSubtitle}
-          getImageURL={this.getImageURL}
-        />
+        <CreatePosterForm handleValueChange={this.handleValueChange} />
         <Poster
           title={this.state.title}
           subtitle={this.state.subtitle}
